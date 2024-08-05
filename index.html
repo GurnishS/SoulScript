@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | SoulScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <nav>
+        <h1>SoulScript</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <div id="div1">
+            <h1>Welcome to SoulScript</h1>
+            <p>Welcome to SoulScript, a diary entry platform that provides you with a notewriting sheet, account management, and note storage. Our unique approach to personal reflections was inspired by an IT workshop project. Our founder started SoulScript with the goal of offering readers a glimpse into their thoughts and experiences. Take some time to explore our blog and see for yourself what sparks your curiosity. Join our community and start your journey of self-discovery today!</p>
+        </div>
+        <div id="div2">
+            <h2>Unlease your
+                <br>thoughts</h2>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get Started</button>
+        </div>
+    </section>
+
+        </head>
+        <body>
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="login.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="./images/avatar.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="email"><b>Email</b></label>
+              <input type="email" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <button type="submit">Login</button>
+              
+            </div>
+        
+            <div class="container flex-spacebw" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'">Register</button>
+            </div>
+          </form>
+        </div>
+        
+        <div id="id02" class="modal">
+          
+            <form class="modal-content animate" action="register.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./images/avatar.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Register</button>
+              </div>
+          
+              <div class="container flex-spacebw" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="button" onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'">Login</button>
+              </div>
+            </form>
+          </div>
+    <footer>
+        <div id="info">
+            <h1>SoulScript</h1>
+            <div>
+                <p>gurnish@soulscript.com</p>
+                <p>IIIT Kota</p>
+                <p>123-456-7890</p>
+            </div>
+            <p>&copy; 2024 SoulScript. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
